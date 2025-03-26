@@ -16,6 +16,75 @@
       | shoes under 500
     </title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+      }
+
+      .parent img {
+        object-fit: cover;
+      }
+
+      .grandpa {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+      }
+
+      .parent {
+        width: 100%;
+        height: 100%;
+      }
+
+      .child {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+      }
+
+      .child button {
+        background: #f9f923;
+        border-radius: 20px;
+      }
+
+      @media (max-width: 720px) {
+        .container {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .grandpa {
+          margin-top: 100px;
+          width: 100%;
+        }
+
+        .parent {
+          width: 100%;
+        }
+
+        .grandpa button {
+          margin-bottom: 10px;
+          width: 50%;
+        }
+
+        h1,
+        p {
+          margin-bottom: 50px;
+        }
+      }
+    </style>
   </head>
   <body>
     <h1>Best Running Shoes Online – Shop Now!</h1>
